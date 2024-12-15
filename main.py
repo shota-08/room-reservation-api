@@ -28,10 +28,10 @@ async def index():
 async def users(users: User):
     return {"users": users}
 
-@app.post("/room")
+@app.post("/rooms")
 async def room(room: Room):
-    return {"room": room}
+    return {"rooms": room}
 
-@app.post("/booking")
+@app.post("/bookings")
 async def booking(booking: Booking):
-    return {"booking": booking}
+    return {"bookings": booking}
